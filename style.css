@@ -16,13 +16,14 @@ body {
     height: 100vh;
 }
 .face > img{
+    display: inline;
     width: 5%;
     padding: 5px;
     border-radius: 50%;
     
 }
   
-}
+
 
 
 .section h1 {
