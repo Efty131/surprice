@@ -1,37 +1,36 @@
-* {
-    box-sizing: border-box;
+/* Style the video: 100% width and height to cover the entire window */
+#myvideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
 }
 
-body {
-    background-image: url("videos/fireworks2.gif");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    margin: 0;
-    padding: 0;
-
+.content {
+    position: fixed;
+    bottom: 0;
+    width: auto;
 }
 
-.section {
-    height: 100vh;
-}
-.face > img{
+img {
     display: inline;
+    margin-bottom: 40px;
     width: 5%;
     padding: 5px;
     border-radius: 50%;
-    
+
 }
-  
 
 
 
-.section h1 {
+
+h1 {
 
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 100px;
+    font-size: 50px;
     height: 100vh;
     text-align: center;
     font-family: algerian;
@@ -47,11 +46,15 @@ body {
 @keyframes moverbar {
     0% {
         background-position: 0% 30%;
-    };
+    }
+
+    ;
 
     100% {
         background-position: 100% 50%
-    };
+    }
+
+    ;
 
 
 }
@@ -62,20 +65,29 @@ body {
 
 /* done ✔ */
 /*Mobile View*/
-@media only screen and (max-width:480px) {
+@media only screen and (max-width:360px) {
 
 
-    .section h1 {
+    .content h1 {
         font-size: 40px;
-        
-        animation: moverbar 2.5s linear infinite;
+        margin-bottom: -85px;
 
-    }
-    .face > img{
-        width: 15%;
-        margin-top: 15px;
 
 
     }
-    
+
+    #myvideo {
+        position: fixed;
+
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    img {
+        width: 20%;
+
+
+
+    }
+
 }
