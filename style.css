@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 /* Style the video: 100% width and height to cover the entire window */
 #myvideo {
     position: fixed;
@@ -32,20 +34,36 @@ h1 {
     align-items: center;
     font-size: 50px;
     height: 100vh;
-    text-align: center;
+
     font-family: algerian;
+    text-align: center;
     background-image: url("images/red.png");
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
     animation: moverbar 2.5s linear infinite;
-    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    /* -webkit-text-stroke: 1px rgb(0, 0, 0); */
 
+}
+
+@font-face {
+    font-family: algerian;
+    src: url("Algerian_Regular.ttf");
+}
+
+.image-container {
+
+    width: 100%;
+}
+
+.image-container>img {
+    animation: moveImage 5s linear infinite;
+    transform: translateX(-800px);
 }
 
 @keyframes moverbar {
     0% {
-        background-position: 0% 30%;
+        background-position: 0%;
     }
 
     ;
@@ -59,6 +77,21 @@ h1 {
 
 }
 
+@keyframes moveImage {
+
+    from {
+        transform: translatex(500px);
+    }
+
+
+
+    ;
+
+
+}
+
+
+
 
 
 
@@ -69,8 +102,8 @@ h1 {
 
 
     .content h1 {
-        font-size: 40px;
-        margin-bottom: -85px;
+        font-size: 34px;
+        margin-bottom: -175px;
 
 
 
@@ -84,8 +117,23 @@ h1 {
     }
 
     img {
-        width: 20%;
+        width: 10%;
+    }
 
+    .image-container>img {
+        animation: moveImage 3s linear infinite;
+        transform: translateX(400px);
+    }
+
+    @keyframes moveImage {
+
+        from {
+            transform: translatex(-250px);
+        }
+
+
+
+        ;
 
 
     }
